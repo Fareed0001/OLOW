@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -371,7 +371,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -603,13 +603,10 @@ section {
   font-weight: 600;
 }
 
-
-
 @media (max-width: 575px) {
   .goals .col {
-      margin: auto auto 5%;
+    margin: auto auto 5%;
   }
-  
 }
 
 /*--------------------------------------------------------------
@@ -625,6 +622,7 @@ section {
 
 .milestone img {
   width: 50%;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 575px) {
@@ -653,8 +651,6 @@ section {
   }
 }
 
-
-
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
@@ -681,7 +677,7 @@ section {
 }
 
 .featured .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -700,10 +696,10 @@ section {
 
 .featured img {
   width: 100%;
+    animation: left-right 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 575px) {
-
   .featured .featured-header {
     font-size: 1.3rem;
     font-weight: 600;
@@ -821,7 +817,7 @@ section {
   font-weight: 600;
 }
 
-.contact .contact-email-form .error-message br+br {
+.contact .contact-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -883,7 +879,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .contact-email-form button[type=submit] {
+.contact .contact-email-form button[type="submit"] {
   background: #47b2e4;
   border: 0;
   padding: 12px 34px;
@@ -893,7 +889,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .contact-email-form button[type=submit]:hover {
+.contact .contact-email-form button[type="submit"]:hover {
   background: #209dd8;
 }
 
@@ -938,17 +934,16 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #4668a2;
   content: "/";
 }
-
 
 /*--------------------------------------------------------------
 # Footer
@@ -983,13 +978,13 @@ section {
   border: 1px solid #e1ecff;
 }
 
-.footer .footer-newsletter form input[type=email] {
+.footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 8px;
   width: calc(100% - 140px);
 }
 
-.footer .footer-newsletter form input[type=submit] {
+.footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -1005,10 +1000,9 @@ section {
   border-radius: 4px;
 }
 
-.footer .footer-newsletter form input[type=submit]:hover {
+.footer .footer-newsletter form input[type="submit"]:hover {
   background: #5969f3;
 }
-
 
 .footer .footer-top {
   background-size: contain;
@@ -1129,3 +1123,356 @@ section {
   font-size: 13px;
   color: #012970;
 }
+
+/*--------------------------------------------------------------
+# Contribute
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Contribute Hero Section
+--------------------------------------------------------------*/
+#contribute-hero {
+  width: 100%;
+  height: 70vh;
+  margin: 5% auto auto;
+}
+
+#contribute-hero .order-2 {
+  padding: 10% 5% 0;
+}
+
+#contribute-hero h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: justify;
+}
+
+#contribute-hero h2 {
+  color: #484848;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin: 1% 0 7%;
+  text-align: justify;
+}
+
+#contribute-hero a {
+  text-decoration: none;
+}
+
+#contribute-hero .btn-get-started {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+}
+
+#contribute-hero .btn-get-started:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+#contribute-hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (min-width: 1024px) {
+  #contribute-hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 991px) {
+  #contribute-hero {
+    height: 100vh;
+  }
+
+  #contribute-hero .animated {
+    animation: none;
+  }
+
+  #contribute-hero .contribute-hero-img {
+    text-align: center;
+  }
+
+  #contribute-hero .contribute-hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #contribute-hero {
+    margin: 0;
+  }
+
+  #contribute-hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #contribute-hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #contribute-hero .contribute-hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #contribute-hero {
+    height: 75vh;
+  }
+  
+  #contribute-hero .contribute-hero-img img {
+    width: 100%;
+    margin: 5% 0 0;
+  }
+
+  #contribute-hero h1 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    text-align: justify;
+    width: 90%;
+  }
+
+  #contribute-hero h2 {
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Pledge
+--------------------------------------------------------------*/
+.pledge .pledge-header {
+  font-size: 1.7rem;
+  font-weight: 600;
+  width: 80%;
+}
+
+.pledge .pledge-sub-header {
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 80%;
+}
+
+.pledge a {
+  text-decoration: none;
+}
+
+.pledge p {
+  text-align: justify;
+  width: 80%;
+}
+
+.pledge .btn-get-started {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+}
+
+.pledge .btn-get-started:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.pledge img {
+  width: 80%;
+  margin: auto 10%;
+  animation: left-right 2s ease-in-out infinite alternate-reverse both;
+  border-radius: 12px;
+}
+
+@media (max-width: 575px) {
+  .pledge .pledge-header {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .pledge .pledge-sub-header {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Volunteer
+--------------------------------------------------------------*/
+.volunteer .volunteer-header {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.volunteer .col-lg-6 {
+  padding: 0 5%;
+}
+
+.volunteer .volunteer-sub-header {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.volunteer a {
+  text-decoration: none;
+}
+
+.volunteer p {
+  text-align: justify;
+}
+
+.volunteer .btn-get-started {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+}
+
+.volunteer .btn-get-started:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.volunteer img {
+  width: 100%;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  border-radius: 12px;
+}
+
+@media (max-width: 575px) {
+  .volunteer .volunteer-header {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .volunteer .volunteer-sub-header {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Partner
+--------------------------------------------------------------*/
+.partner .partner-header {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.partner .col-lg-6 {
+  padding: 0 5%;
+}
+
+.partner .partner-sub-header {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.partner a {
+  text-decoration: none;
+}
+
+.partner p {
+  text-align: justify;
+}
+
+.partner .btn-get-started {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+}
+
+.partner .btn-get-started:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.partner img {
+  width: 100%;
+  border-radius: 12px;  
+  animation: left-right 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes left-right {
+  0% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@media (max-width: 575px) {
+  .partner .partner-header {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .partner .partner-sub-header {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+/*--------------------------------------------------------------
+# Story
+--------------------------------------------------------------*/
+#story {
+  margin: 10% 0 0;
+}
+
+#story img {
+  width: 100%;
+}
+
+#story p {
+  text-align: justify;
+}
+
