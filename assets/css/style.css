@@ -448,7 +448,7 @@ h6 {
     font-weight: 600;
     line-height: 2.2rem;
     text-align: justify;
-    width: 90%;
+    width: 100%;
   }
 
   #hero h2 {
@@ -604,6 +604,12 @@ section {
 }
 
 @media (max-width: 575px) {
+  .goals .section-title p {
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+  }
+
   .goals .col {
     margin: auto auto 5%;
   }
@@ -696,7 +702,7 @@ section {
 
 .featured img {
   width: 100%;
-    animation: left-right 2s ease-in-out infinite alternate-reverse both;
+  animation: left-right 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 575px) {
@@ -1128,7 +1134,6 @@ section {
 # Contribute
 --------------------------------------------------------------*/
 
-
 /*--------------------------------------------------------------
 # Contribute Hero Section
 --------------------------------------------------------------*/
@@ -1232,10 +1237,10 @@ section {
   #contribute-hero {
     height: 75vh;
   }
-  
+
   #contribute-hero .contribute-hero-img img {
     width: 100%;
-    margin: 5% 0 0;
+    margin: 10% 0 0;
   }
 
   #contribute-hero h1 {
@@ -1263,8 +1268,6 @@ section {
     transform: translateY(-10px);
   }
 }
-
-
 
 /*--------------------------------------------------------------
 # Pledge
@@ -1319,14 +1322,17 @@ section {
   .pledge .pledge-header {
     font-size: 1.3rem;
     font-weight: 600;
+    width: 90%;
+    margin: auto;
   }
 
   .pledge .pledge-sub-header {
     font-size: 1rem;
     font-weight: 500;
+    width: 90%;
+    margin: auto;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Volunteer
@@ -1389,7 +1395,6 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Partner
 --------------------------------------------------------------*/
@@ -1435,7 +1440,7 @@ section {
 
 .partner img {
   width: 100%;
-  border-radius: 12px;  
+  border-radius: 12px;
   animation: left-right 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -1476,3 +1481,93 @@ section {
   text-align: justify;
 }
 
+/*--------------------------------------------------------------
+# Story
+--------------------------------------------------------------*/
+#milestones {
+  margin: 5% 0 0;
+}
+
+#milestones img {
+  width: 100%;
+}
+
+#help .container {
+  text-align: center;
+}
+
+/* CAROUSEL  */
+#milestones .section-header {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+#milestones section {
+  overflow: hidden;
+  position: relative;
+}
+
+#milestones .micro-slider {
+  height: 480px;
+  /* margin: 10px 0; */
+  position: relative;
+  width: 100%;
+}
+
+#milestones .micro-slider.fullwidth {
+  height: 480px;
+  /* margin: 64px 0; */
+}
+
+.micro-slider.fullwidth .slider-item {
+  height: 480px;
+  line-height: 480px;
+  width: 100%;
+}
+
+#milestones .slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: 0 50%;
+}
+
+#milestones .slider-item {
+  display: none;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 60%;
+  cursor: pointer;
+}
+
+#milestones .indicators {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  #milestones {
+    margin: 10% 0 0;
+  }
+
+  #milestones section {
+    margin: -30% 0;
+    padding: 0;
+  }
+
+  #milestones .slider-item {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #help h2 {
+    font-size: 1.2rem;
+  }
+
+  #help button {
+    margin: 2%;
+  }
+}
