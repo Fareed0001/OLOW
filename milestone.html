@@ -42,6 +42,8 @@
                 <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
             </div>
 
+            <div id="google_translate_element"></div>
+
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="index.html">Home</a></li>
@@ -236,6 +238,17 @@
     <!-- Carousel -->
     <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <!-- Google translate  -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: "en" },
+                "google_translate_element"
+            );
+        }
+    </script>
 
 </body>
 

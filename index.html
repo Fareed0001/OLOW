@@ -47,6 +47,8 @@
         <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
       </div>
 
+      <div id="google_translate_element"></div>
+
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -57,6 +59,7 @@
           <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
           <li><a class="getstarted scrollto" href="contribute.html">Join Us</a></li>
         </ul>
+
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -142,7 +145,60 @@
         <p data-aos="fade-up" data-aos-delay="400">Effecting Long Term Solutions is our approach. <a
             href="milestone.html">See How Far We’ve
             Gone.</a></p>
-        <img data-aos="fade-up" data-aos-delay="800" src="assets/img/counts-img.svg" alt="milestone" class="img-fluid">
+
+        <!-- carousel  -->
+        <section id="milestones" class="milestones">
+          <div class="container" id="micro-slider">
+            <section>
+              <div class="micro-slider">
+                <div class="slider-item s1">
+                  <img src="assets\img\gallery\img1.jpg" alt="outreach picture">
+                </div>
+                <div class="slider-item s2">
+                  <img src="assets\img\gallery\img2.png" alt="outreach picture">
+                </div>
+                <div class="slider-item s3">
+                  <img src="assets\img\gallery\img3.png" alt="outreach picture">
+                </div>
+                <div class="slider-item s4">
+                  <img src="assets\img\gallery\img4.png" alt="outreach picture">
+                </div>
+                <div class="slider-item s5">
+                  <img src="assets\img\gallery\img5.png" alt="outreach picture">
+                </div>
+                <div class="slider-item s6">
+                  <img src="assets\img\gallery\img6.png" alt="outreach picture">
+                </div>
+                <div class="slider-item s7">
+                  <img src="assets\img\gallery\img7.png" alt="outreach picture">
+                </div>
+                <div class="slider-item s8">
+                  <img src="assets\img\gallery\img8.png" alt="outreach picture">
+                </div>
+                <div class="slider-item s9">
+                  <img src="assets\img\gallery\img9.png" alt="outreach picture">
+                </div>
+                <div class="slider-item s10">
+                  <img src="assets\img\gallery\img10.png" alt="outreach picture">
+                </div>
+                <div class="slider-item 11">
+                  <img src="assets\img\gallery\img11.png" alt="outreach picture">
+                </div>
+                <div class="slider-item s12">
+                  <img src="assets\img\gallery\img12.png" alt="outreach picture">
+                </div>
+                <div class="slider-item s13">
+                  <img src="assets\img\gallery\img13.png" alt="outreach picture">
+                </div>
+                <div class="slider-item s614">
+                  <img src="assets\img\gallery\img14.png" alt="outreach picture">
+                </div>
+              </div>
+            </section>
+          </div>
+        </section><!-- End Milestone Section -->
+
+        <!-- carousel end  -->
 
       </div>
     </section><!-- End Milestone Section -->
@@ -150,7 +206,7 @@
     <!-- ======= Video Section ======= -->
     <section id="video" class="video">
       <div class="container" data-aos="fade-up">
-        <video controls poster="assets\img\poster.jpg">
+        <video controls>
           <source src="assets\img\gallery\SaveInsta.App - 3155425429376276394.mp4" type="video/mp4">
         </video>
         <p>Video of our last outreach program</p>
@@ -331,6 +387,7 @@
         Designed by <a href="https://www.moreed.ng/">Moreed</a>
       </div>
     </div>
+
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
@@ -347,6 +404,21 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Carousel -->
+  <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+  <!-- Google translate  -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: "en" },
+        "google_translate_element"
+      );
+    }
+  </script>
 
 </body>
 
