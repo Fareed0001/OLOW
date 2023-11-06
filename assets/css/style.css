@@ -702,6 +702,7 @@ section {
 
 .featured img {
   width: 100%;
+  border-radius: 12px;
   animation: left-right 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -1470,16 +1471,38 @@ section {
 # Story
 --------------------------------------------------------------*/
 #story {
-  margin: 10% 0 0;
+  margin: 5% 0 0;
 }
 
 #story img {
-  width: 100%;
+  width: 80%;
+  margin: auto 10% 2%;
+  border-radius: 12px;
 }
 
 #story p {
   text-align: justify;
+  width: 90%;
+  margin: auto;
 }
+
+@media (max-width: 575px) {
+  #story {
+    margin: 10% 0 0;
+  }
+
+  #story img {
+    width: 100%;
+    margin: auto auto 2%;
+  }
+
+  #story p {
+    text-align: justify;
+    width: 100%;
+    margin: auto;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Story
